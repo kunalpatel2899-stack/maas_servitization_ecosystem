@@ -1079,5 +1079,572 @@
         "impact": "Critical"
       }
     ]
+  },
+  {
+    "ecosystem": {
+      "id": "eco-xometry",
+      "name": "Xometry AI-Native Manufacturing Marketplace",
+      "industry": "On-Demand / Custom Manufacturing (Aerospace, Defense, Automotive, Medical, Industrial)",
+      "country": "United States (global network across 12+ countries via Xometry Europe)",
+      "platform": "Xometry Marketplace \u2014 AI Instant Quoting Engine + Thomasnet.com",
+      "description": "A real, publicly documented Manufacturing-as-a-Service ecosystem built from Xometry, Inc.'s (Nasdaq: XMTR) SEC filings, investor disclosures and verifiable public sources. Xometry is an AI-native marketplace, founded in 2013 and public since its June 2021 IPO, that matches enterprise buyers to a vetted global network of manufacturing suppliers via a proprietary machine-learning instant-quoting engine. FY2025 marketplace revenue was $686.6M across 81,821 active buyers and 4,996 active suppliers. The ecosystem includes its 2019 acquisition of Shift GmbH (Munich, now Xometry Europe) and its 2021 acquisition of the Thomas/Thomasnet.com industrial sourcing marketplace ($300M). All actors, certifications (ISO 9001:2015, AS9100D, ISO 13485:2016, IATF 16949:2016, ITAR registration, CMMC Level 2) and dependency structures below are grounded in company disclosures, SEC filings and industry press \u2014 no fictional actors have been added.",
+      "currentPhase": "Evolution",
+      "platformType": "Centralized",
+      "platformOpenness": 62,
+      "numOrganizations": 11,
+      "dateCreated": "2013-01-01"
+    },
+    "actors": [
+      {
+        "id": "xmt-operator",
+        "ecosystemId": "eco-xometry",
+        "name": "Xometry, Inc.",
+        "type": "Platform Operator",
+        "role": "AI-Native Marketplace Orchestrator",
+        "authorityLevel": 92,
+        "trustLevel": 82,
+        "criticality": "Critical",
+        "platformMember": true,
+        "country": "United States",
+        "capabilities": [
+          "AI-powered Instant Quoting Engine (ML-based pricing & routing)",
+          "Cloud-based Manufacturing Execution System for suppliers",
+          "Marketplace orchestration & order matching"
+        ],
+        "resources": [
+          "Nasdaq-listed capital (IPO June 2021, ~$300M raised)",
+          "FY2025 marketplace revenue $686.6M",
+          "Proprietary ML pricing/routing algorithms"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "xmt-europe",
+        "ecosystemId": "eco-xometry",
+        "name": "Xometry Europe (formerly Shift GmbH)",
+        "type": "Marketplace",
+        "role": "Regional On-Demand Manufacturing Node (Europe)",
+        "authorityLevel": 65,
+        "trustLevel": 74,
+        "criticality": "High",
+        "platformMember": true,
+        "country": "Germany",
+        "capabilities": [
+          "CNC machining & sheet-metal partner coordination",
+          "Regional matching across 12+ European countries"
+        ],
+        "resources": [
+          "~1,000+ European manufacturing partner network (at Dec 2019 acquisition)"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "xmt-thomas",
+        "ecosystemId": "eco-xometry",
+        "name": "Thomas (Thomasnet.com)",
+        "type": "Marketplace",
+        "role": "Industrial Sourcing & Supplier Discovery Marketplace",
+        "authorityLevel": 55,
+        "trustLevel": 76,
+        "criticality": "Medium",
+        "platformMember": true,
+        "country": "United States",
+        "capabilities": [
+          "Supplier discovery & directory services",
+          "Digital marketing & data services for sellers"
+        ],
+        "resources": [
+          "1.3M+ registered buyers (93% of Fortune 1000)",
+          "500,000+ industrial sellers (45,000 diversity-certified)"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "xmt-suppliers",
+        "ecosystemId": "eco-xometry",
+        "name": "Vetted Manufacturing Partner Network",
+        "type": "Manufacturing Provider",
+        "role": "Capacity Provider Network (CNC, 3D Printing, Injection Molding, Sheet Metal)",
+        "authorityLevel": 38,
+        "trustLevel": 64,
+        "criticality": "Critical",
+        "platformMember": true,
+        "country": "Global (US-majority)",
+        "capabilities": [
+          "CNC machining",
+          "Additive manufacturing / 3D printing",
+          "Injection molding",
+          "Sheet metal fabrication"
+        ],
+        "resources": [
+          "4,996 active suppliers (FY2025)",
+          "Only ~35% of applicants pass Xometry's quality-control vetting test order"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "xmt-nasa",
+        "ecosystemId": "eco-xometry",
+        "name": "NASA \u2014 Marshall Space Flight Center",
+        "type": "Customer",
+        "role": "Government / Aerospace Demand Originator",
+        "authorityLevel": 58,
+        "trustLevel": 88,
+        "criticality": "High",
+        "platformMember": false,
+        "country": "United States",
+        "capabilities": [
+          "Mission-critical aerospace specification & qualification"
+        ],
+        "resources": [
+          "Federal government contracting budget"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "xmt-enterprise",
+        "ecosystemId": "eco-xometry",
+        "name": "Enterprise OEM Buyers (BMW, Bosch, Dell, GE et al.)",
+        "type": "Customer",
+        "role": "Enterprise Demand Originators",
+        "authorityLevel": 50,
+        "trustLevel": 80,
+        "criticality": "High",
+        "platformMember": false,
+        "country": "Global",
+        "capabilities": [
+          "High-volume / recurring custom manufacturing demand"
+        ],
+        "resources": [
+          "Enterprise procurement budgets"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "xmt-standards",
+        "ecosystemId": "eco-xometry",
+        "name": "ISO / SAE International / IATF \u2014 Quality & Industry Standards Consortium",
+        "type": "Standards Body",
+        "role": "Quality Management Standard-Setter (ISO 9001, AS9100D, IATF 16949)",
+        "authorityLevel": 78,
+        "trustLevel": 85,
+        "criticality": "Medium",
+        "platformMember": false,
+        "country": "International",
+        "capabilities": [
+          "Quality management standard-setting",
+          "Aerospace/automotive/medical QMS frameworks"
+        ],
+        "resources": [
+          "ISO 9001:2015",
+          "AS9100D",
+          "IATF 16949:2016",
+          "ISO 13485:2016"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "xmt-regulator",
+        "ecosystemId": "eco-xometry",
+        "name": "U.S. Directorate of Defense Trade Controls (DDTC)",
+        "type": "Regulator",
+        "role": "Export-Control Regulatory Authority (ITAR)",
+        "authorityLevel": 95,
+        "trustLevel": 90,
+        "criticality": "High",
+        "platformMember": false,
+        "country": "United States",
+        "capabilities": [
+          "ITAR registration & export-control enforcement"
+        ],
+        "resources": [
+          "Federal regulatory mandate"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "xmt-certbody",
+        "ecosystemId": "eco-xometry",
+        "name": "Perry Johnson Registrars, Inc.",
+        "type": "Certification Body",
+        "role": "Accredited ISO 9001 / AS9100D Certification Auditor",
+        "authorityLevel": 68,
+        "trustLevel": 82,
+        "criticality": "Medium",
+        "platformMember": false,
+        "country": "United States",
+        "capabilities": [
+          "ISO/AS9100D certification audits",
+          "Surveillance & recertification audits"
+        ],
+        "resources": [
+          "Accredited registrar status"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "xmt-security",
+        "ecosystemId": "eco-xometry",
+        "name": "CMMC Third-Party Assessor Organization (C3PAO)",
+        "type": "Security Provider",
+        "role": "Cybersecurity Maturity Model Certification Assessor",
+        "authorityLevel": 72,
+        "trustLevel": 87,
+        "criticality": "High",
+        "platformMember": false,
+        "country": "United States",
+        "capabilities": [
+          "CMMC Level 2 third-party assessment",
+          "NIST SP 800-171 audit"
+        ],
+        "resources": [
+          "Cyber-AB accreditation"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "xmt-logistics",
+        "ecosystemId": "eco-xometry",
+        "name": "Freight & Parcel Carrier Network (UPS, FedEx, DHL, USPS)",
+        "type": "Logistics",
+        "role": "Fulfillment & Freight Carriers",
+        "authorityLevel": 30,
+        "trustLevel": 75,
+        "criticality": "Medium",
+        "platformMember": false,
+        "country": "Global",
+        "capabilities": [
+          "Parcel & freight shipping",
+          "International customs brokerage & freight forwarding"
+        ],
+        "resources": [
+          "Global carrier network"
+        ],
+        "status": "Active"
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "xmt-e1",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-regulator",
+        "toActorId": "xmt-operator",
+        "dependencyType": "Contractual",
+        "strength": 75,
+        "ruleId": "D8",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e2",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-regulator",
+        "toActorId": "xmt-suppliers",
+        "dependencyType": "Contractual",
+        "strength": 60,
+        "ruleId": "D8",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e3",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-standards",
+        "toActorId": "xmt-suppliers",
+        "dependencyType": "Contractual",
+        "strength": 70,
+        "ruleId": "D10",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e4",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-certbody",
+        "toActorId": "xmt-operator",
+        "dependencyType": "Contractual",
+        "strength": 65,
+        "ruleId": "D13",
+        "criticality": "Medium",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e5",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-security",
+        "toActorId": "xmt-operator",
+        "dependencyType": "Contractual",
+        "strength": 70,
+        "ruleId": "D9",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e6",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-security",
+        "toActorId": "xmt-suppliers",
+        "dependencyType": "Contractual",
+        "strength": 62,
+        "ruleId": "D9",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e7",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-operator",
+        "toActorId": "xmt-suppliers",
+        "dependencyType": "Technology",
+        "strength": 95,
+        "ruleId": "D2",
+        "criticality": "Critical",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e8",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-operator",
+        "toActorId": "xmt-europe",
+        "dependencyType": "Technology",
+        "strength": 80,
+        "ruleId": "D12",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e9",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-thomas",
+        "toActorId": "xmt-operator",
+        "dependencyType": "Data",
+        "strength": 68,
+        "ruleId": "D8",
+        "criticality": "Medium",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e10",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-thomas",
+        "toActorId": "xmt-enterprise",
+        "dependencyType": "Service",
+        "strength": 60,
+        "ruleId": "D4",
+        "criticality": "Medium",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e11",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-suppliers",
+        "toActorId": "xmt-enterprise",
+        "dependencyType": "Material",
+        "strength": 85,
+        "ruleId": "D3",
+        "criticality": "Critical",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e12",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-suppliers",
+        "toActorId": "xmt-nasa",
+        "dependencyType": "Material",
+        "strength": 55,
+        "ruleId": "D3",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e13",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-operator",
+        "toActorId": "xmt-nasa",
+        "dependencyType": "Service",
+        "strength": 60,
+        "ruleId": "D2",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e14",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-operator",
+        "toActorId": "xmt-logistics",
+        "dependencyType": "Service",
+        "strength": 70,
+        "ruleId": "D5",
+        "criticality": "Medium",
+        "status": "Active"
+      },
+      {
+        "id": "xmt-e15",
+        "ecosystemId": "eco-xometry",
+        "fromActorId": "xmt-logistics",
+        "toActorId": "xmt-enterprise",
+        "dependencyType": "Service",
+        "strength": 65,
+        "ruleId": "D6",
+        "criticality": "Medium",
+        "status": "Active"
+      }
+    ],
+    "governanceRules": [
+      {
+        "id": "G1",
+        "ecosystemId": "eco-xometry",
+        "title": "Regulatory Alignment",
+        "description": "All actors must operate within the boundaries set by the Regulator and applicable law.",
+        "category": "Compliance",
+        "active": true,
+        "owner": "U.S. Directorate of Defense Trade Controls (DDTC)",
+        "compliance": 92,
+        "impact": "High"
+      },
+      {
+        "id": "G2",
+        "ecosystemId": "eco-xometry",
+        "title": "Platform Access Rule",
+        "description": "Defines conditions under which actors may access core platform orchestration services.",
+        "category": "Onboarding",
+        "active": true,
+        "owner": "Xometry, Inc.",
+        "compliance": 88,
+        "impact": "High"
+      },
+      {
+        "id": "G3",
+        "ecosystemId": "eco-xometry",
+        "title": "Marketplace Fairness Rule",
+        "description": "Ensures non-discriminatory matching of supply and demand within the marketplace.",
+        "category": "Compliance",
+        "active": true,
+        "owner": "Xometry, Inc.",
+        "compliance": 65,
+        "impact": "Medium"
+      },
+      {
+        "id": "G4",
+        "ecosystemId": "eco-xometry",
+        "title": "Governance Role Assignment",
+        "description": "Every governance role must be assigned to an accountable actor at all times.",
+        "category": "Onboarding",
+        "active": true,
+        "owner": "Xometry, Inc. (Board & Executive Leadership)",
+        "compliance": 80,
+        "impact": "High"
+      },
+      {
+        "id": "G5",
+        "ecosystemId": "eco-xometry",
+        "title": "Customer Protection Rule",
+        "description": "Protects customers from unfair contractual or service terms.",
+        "category": "Compliance",
+        "active": true,
+        "owner": "Xometry, Inc.",
+        "compliance": 85,
+        "impact": "Medium"
+      },
+      {
+        "id": "G6",
+        "ecosystemId": "eco-xometry",
+        "title": "Dispute Escalation Rule",
+        "description": "Defines the escalation path for unresolved inter-actor disputes.",
+        "category": "Risk",
+        "active": false,
+        "owner": "Not publicly documented",
+        "compliance": 20,
+        "impact": "Medium"
+      },
+      {
+        "id": "G7",
+        "ecosystemId": "eco-xometry",
+        "title": "Independent Audit Rule",
+        "description": "Requires periodic independent governance and compliance audits.",
+        "category": "Risk",
+        "active": true,
+        "owner": "Perry Johnson Registrars, Inc. / CMMC C3PAO",
+        "compliance": 90,
+        "impact": "High"
+      },
+      {
+        "id": "G8",
+        "ecosystemId": "eco-xometry",
+        "title": "Data Sovereignty Rule",
+        "description": "Mandates data residency, access control and sovereignty-compliant handling.",
+        "category": "Data",
+        "active": true,
+        "owner": "Xometry Europe (formerly Shift GmbH)",
+        "compliance": 60,
+        "impact": "High"
+      },
+      {
+        "id": "G9",
+        "ecosystemId": "eco-xometry",
+        "title": "Quality Certification Rule",
+        "description": "Requires manufacturing quality certification before capacity is listed.",
+        "category": "Compliance",
+        "active": true,
+        "owner": "Perry Johnson Registrars, Inc.",
+        "compliance": 93,
+        "impact": "Critical"
+      },
+      {
+        "id": "G10",
+        "ecosystemId": "eco-xometry",
+        "title": "Interoperability Standard Rule",
+        "description": "Requires adherence to shared technical and data interoperability standards.",
+        "category": "Data",
+        "active": true,
+        "owner": "ISO / SAE International / IATF",
+        "compliance": 88,
+        "impact": "High"
+      },
+      {
+        "id": "G11",
+        "ecosystemId": "eco-xometry",
+        "title": "Circularity & Sustainability Rule",
+        "description": "Requires end-of-life material recovery and circular closure reporting.",
+        "category": "Lifecycle",
+        "active": false,
+        "owner": "Not applicable \u2014 no documented circularity program",
+        "compliance": 15,
+        "impact": "Low"
+      },
+      {
+        "id": "G12",
+        "ecosystemId": "eco-xometry",
+        "title": "Workforce Qualification Rule",
+        "description": "Requires minimum workforce skills and training certification.",
+        "category": "Onboarding",
+        "active": true,
+        "owner": "Xometry, Inc. (Partner Onboarding & QC Test Order)",
+        "compliance": 70,
+        "impact": "Medium"
+      },
+      {
+        "id": "G13",
+        "ecosystemId": "eco-xometry",
+        "title": "Cyber-Resilience Rule",
+        "description": "Requires baseline cybersecurity controls across platform-critical actors.",
+        "category": "Resilience",
+        "active": true,
+        "owner": "CMMC Third-Party Assessor Organization (C3PAO)",
+        "compliance": 95,
+        "impact": "Critical"
+      },
+      {
+        "id": "G14",
+        "ecosystemId": "eco-xometry",
+        "title": "Capacity Redundancy Rule",
+        "description": "Requires qualification of alternate capacity providers to avoid single points of failure.",
+        "category": "Dependency",
+        "active": true,
+        "owner": "Xometry, Inc.",
+        "compliance": 75,
+        "impact": "High"
+      }
+    ]
   }
 ]

@@ -83,7 +83,7 @@ export interface AppState {
   markReportGenerated: (ecosystemId: string) => void;
 
   // Samples
-  loadSampleEcosystem: (index: 0 | 1) => void;
+  loadSampleEcosystem: (index: 0 | 1 | 2) => void;
 
   // Import Wizard
   importBundle: (

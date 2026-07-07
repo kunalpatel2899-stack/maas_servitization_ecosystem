@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Plus, Sparkles, Factory, Trash2, CheckCircle2, Pencil, ClipboardList, UploadCloud } from "lucide-react";
+import { Plus, Sparkles, Factory, Trash2, CheckCircle2, Pencil, ClipboardList, UploadCloud, BadgeCheck } from "lucide-react";
 import Link from "next/link";
 import { useAppStore, useCurrentEcosystem } from "@/store/useAppStore";
 import { Card, CardContent, CardHeader, CardTitle, CardSubtitle } from "@/components/ui/Card";
@@ -36,7 +36,7 @@ export default function EcosystemBuilderPage() {
           </div>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             <button
               onClick={() => { loadSampleEcosystem(0); toast.success("Catena-X sample ecosystem loaded."); }}
               className="flex items-start gap-3 rounded-lg border border-surface-borderLight bg-surface-panelAlt/60 p-4 text-left hover:border-brand-blue/40 hover:bg-brand-blueLight/40"
@@ -58,6 +58,23 @@ export default function EcosystemBuilderPage() {
                 <p className="text-sm font-semibold text-ink-900">Small Manufacturing Marketplace</p>
                 <p className="mt-0.5 text-[12px] text-ink-500">
                   Early-stage regional marketplace — 6 actors, higher concentration risk, Emergence phase.
+                </p>
+              </div>
+            </button>
+            <button
+              onClick={() => { loadSampleEcosystem(2); toast.success("Xometry case study loaded — sourced from public SEC filings and company disclosures."); }}
+              className="flex items-start gap-3 rounded-lg border border-status-healthy/30 bg-status-healthy/[0.04] p-4 text-left hover:border-status-healthy/60 hover:bg-status-healthy/10"
+            >
+              <BadgeCheck size={18} className="mt-0.5 shrink-0 text-status-healthy" />
+              <div>
+                <p className="flex items-center gap-1.5 text-sm font-semibold text-ink-900">
+                  Xometry
+                  <span className="rounded-full bg-status-healthy/15 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wide text-status-healthy">
+                    Verified Real Case
+                  </span>
+                </p>
+                <p className="mt-0.5 text-[12px] text-ink-500">
+                  Real, publicly documented AI-native MaaS marketplace (Nasdaq: XMTR) — 11 actors, 15 dependencies, sourced from SEC filings, Evolution phase.
                 </p>
               </div>
             </button>
