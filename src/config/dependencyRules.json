@@ -1,0 +1,16 @@
+[
+  { "id": "D1", "title": "Equipment & IP Dependency", "description": "Governs reliance on OEM-supplied equipment and manufacturing intellectual property.", "category": "Supply" },
+  { "id": "D2", "title": "Marketplace Matching Dependency", "description": "Governs the coupling between marketplace matching logic and downstream capacity providers." },
+  { "id": "D3", "title": "Capacity Single-Sourcing Dependency", "description": "Flags dependency on a single manufacturing capacity provider without qualified alternates." },
+  { "id": "D4", "title": "Customer Demand Dependency", "description": "Governs the coupling between customer demand volatility and committed capacity." },
+  { "id": "D5", "title": "Logistics Coordination Dependency", "description": "Governs reliance on logistics actors for fulfillment coordination across the ecosystem." },
+  { "id": "D6", "title": "Last-Mile Fulfillment Dependency", "description": "Governs the dependency between fulfillment coordination and final customer delivery." },
+  { "id": "D7", "title": "Financial Underwriting Dependency", "description": "Governs reliance on financial/insurance providers for trade credit and risk pooling." },
+  { "id": "D8", "title": "Data Flow Sovereignty Dependency", "description": "Governs cross-actor data flows that must remain compliant with data sovereignty rules." },
+  { "id": "D9", "title": "Security Dependency", "description": "Governs reliance on the Security Provider to protect platform-critical data and infrastructure." },
+  { "id": "D10", "title": "Interoperability Dependency", "description": "Governs reliance on shared technical/data interoperability standards across platform actors." },
+  { "id": "D11", "title": "Circular Material Dependency", "description": "Governs the dependency loop between manufacturing output and end-of-life material recovery." },
+  { "id": "D12", "title": "Platform Concentration Dependency", "description": "Flags excessive concentration of orchestration or transaction volume on a single platform actor, creating a single point of failure." },
+  { "id": "D13", "title": "Certification Dependency", "description": "Governs reliance on certification bodies before capacity or output can be listed as compliant." },
+  { "id": "D14", "title": "Workforce Skills Dependency", "description": "Governs reliance on workforce/training providers to sustain qualified operating capacity." }
+]

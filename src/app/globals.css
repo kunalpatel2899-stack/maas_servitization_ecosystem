@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  @apply bg-surface-base text-ink-900 antialiased;
+  background-image:
+    radial-gradient(circle at 12% -10%, rgba(11,95,255,0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 0%, rgba(45,198,214,0.06) 0%, transparent 45%);
+  background-attachment: fixed;
+}
+
+* {
+  border-color: theme("colors.surface.border");
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cdd5e0;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b7c1cf;
+}
+
+/* light glassmorphism panel utility */
+.glass {
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(229, 233, 240, 0.9);
+}
+
+.text-gradient-blue {
+  background: linear-gradient(90deg, #0B5FFF 0%, #2DC6D6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.react-flow__attribution {
+  display: none;
+}
+
+.react-flow__controls-button {
+  background: #ffffff !important;
+  border-bottom: 1px solid #E5E9F0 !important;
+}

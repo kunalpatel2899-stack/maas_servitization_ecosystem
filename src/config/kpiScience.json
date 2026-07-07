@@ -1,0 +1,92 @@
+{
+  "gvs": {
+    "purpose": "Detects accountability gaps in the governance structure — governance roles or rules that exist on paper but are not actively enforced or owned.",
+    "formulaText": "GVS = (InactiveRuleRatio × 60) + ((1 − AvgActiveCompliance) × 40)",
+    "variables": [
+      { "symbol": "InactiveRuleRatio", "meaning": "Share of governance rules currently marked inactive" },
+      { "symbol": "AvgActiveCompliance", "meaning": "Mean compliance (0–1) across only the active rules" }
+    ],
+    "source": "ROGF construct — replace with your literature citation on governance void / institutional voids (e.g., Khanna & Palepu-style institutional void theory adapted to platform ecosystems)."
+  },
+  "aor": {
+    "purpose": "Measures whether the ecosystem is onboarding actors fast enough relative to its declared actor base to sustain network growth.",
+    "formulaText": "AOR = (ActiveActors / TotalActors) × 100",
+    "variables": [
+      { "symbol": "ActiveActors", "meaning": "Actors currently in Active status" },
+      { "symbol": "TotalActors", "meaning": "All registered actors regardless of status" }
+    ],
+    "source": "ROGF construct — replace with your literature citation on ecosystem actor onboarding / platform participation growth."
+  },
+  "cri": {
+    "purpose": "Quantifies how concentrated critical dependencies are on a single actor — a proxy for single-point-of-failure exposure.",
+    "formulaText": "CRI = max_a( Σ dependencyStrength(a) ) / Σ_all( dependencyStrength × 1.5 ) × 100",
+    "variables": [
+      { "symbol": "dependencyStrength(a)", "meaning": "Sum of incoming dependency strength, plus half of outgoing dependency strength, for actor a" }
+    ],
+    "source": "ROGF construct — adapted from Herfindahl-Hirschman concentration index methodology, commonly used in market/network concentration analysis."
+  },
+  "pcm": {
+    "purpose": "Assesses whether the platform's technical/orchestration capability and openness are mature enough to support ecosystem-wide coordination.",
+    "formulaText": "PCM = (PlatformOpenness × 0.5) + (AvgAuthorityOfPlatformMembers × 0.5)",
+    "variables": [
+      { "symbol": "PlatformOpenness", "meaning": "Ecosystem-level platform openness setting (0–100)" },
+      { "symbol": "AvgAuthorityOfPlatformMembers", "meaning": "Mean authority level across actors flagged as platform members" }
+    ],
+    "source": "ROGF construct — replace with your literature citation on platform capability / orchestration maturity (e.g., Tiwana-style platform architecture literature)."
+  },
+  "dsc": {
+    "purpose": "Tracks compliance with data-related governance rules (sovereignty, residency, access control) — critical for cross-border MaaS data flows.",
+    "formulaText": "DSC = AvgCompliance(ActiveDataRules) − ((TotalDataRules − ActiveDataRules) / TotalDataRules × 40)",
+    "variables": [
+      { "symbol": "ActiveDataRules", "meaning": "Governance rules in category \"Data\" that are currently active" },
+      { "symbol": "TotalDataRules", "meaning": "All governance rules in category \"Data\"" }
+    ],
+    "source": "ROGF construct — replace with your literature citation on data sovereignty / GDPR-aligned data governance in industrial ecosystems."
+  },
+  "rc": {
+    "purpose": "Captures the social/relational capital embedded in the ecosystem — the average trust actors place in one another and the platform.",
+    "formulaText": "RC = mean(trustLevel) across all actors",
+    "variables": [
+      { "symbol": "trustLevel", "meaning": "Actor-level trust score (0–100), set at registration or updated over time" }
+    ],
+    "source": "ROGF construct — replace with your literature citation on relational/social capital in inter-organizational networks (e.g., Nahapiet & Ghoshal social capital theory)."
+  },
+  "spi": {
+    "purpose": "Detects the 'service paradox' — actors bearing high criticality burden without commensurate realized trust, a known risk in servitized business models.",
+    "formulaText": "SPI = mean(criticalityScore) − mean(trustLevel) + 30",
+    "variables": [
+      { "symbol": "criticalityScore", "meaning": "Numeric mapping of actor criticality: Low=25, Medium=50, High=75, Critical=100" },
+      { "symbol": "trustLevel", "meaning": "Actor-level trust score (0–100)" }
+    ],
+    "source": "ROGF construct — replace with your literature citation on the servitization / service paradox (e.g., Gebauer et al. service paradox literature)."
+  },
+  "ra": {
+    "purpose": "Estimates the ecosystem's capacity to absorb shocks (actor exit, cyberattack, platform failure) without a governance breakdown.",
+    "formulaText": "RA = 100 − (CRI × 0.5) − (UnmitigatedCriticalDependencyRatio × 40) + (RedundancyRuleBonus × 0.1)",
+    "variables": [
+      { "symbol": "CRI", "meaning": "Concentration Risk Index (see above)" },
+      { "symbol": "UnmitigatedCriticalDependencyRatio", "meaning": "Share of Critical/High dependencies not in Active status" },
+      { "symbol": "RedundancyRuleBonus", "meaning": "Compliance level of the Capacity Redundancy Rule (G14), if active" }
+    ],
+    "source": "ROGF construct — replace with your literature citation on resilience engineering / absorptive capacity (e.g., Hollnagel resilience engineering; Zahra & George absorptive capacity)."
+  },
+  "ccr": {
+    "purpose": "Measures whether circularity-oriented actors (recyclers, material recovery) are present and meaningfully connected into the material flow.",
+    "formulaText": "CCR = (CircularActorCoverage × 1.5) + (AvgLoopDependencyStrength × 0.4)",
+    "variables": [
+      { "symbol": "CircularActorCoverage", "meaning": "Share of all actors that are circularity-oriented (type Recycler or matching capability keywords)" },
+      { "symbol": "AvgLoopDependencyStrength", "meaning": "Mean dependency strength of links touching a circular actor" }
+    ],
+    "source": "ROGF construct — replace with your literature citation on circular economy closure rates (e.g., Geissdoerfer et al. circular economy literature)."
+  },
+  "alr": {
+    "purpose": "Proxies how quickly actors absorb and apply governance learning, blending authority and trust as an institutional-learning indicator.",
+    "formulaText": "ALR = (mean(trustLevel) × 0.55) + (mean(authorityLevel) × 0.45) − OnboardingPenalty",
+    "variables": [
+      { "symbol": "trustLevel", "meaning": "Actor-level trust score (0–100)" },
+      { "symbol": "authorityLevel", "meaning": "Actor-level authority/decision power score (0–100)" },
+      { "symbol": "OnboardingPenalty", "meaning": "Flat 5-point penalty applied while any actor is still in Onboarding status" }
+    ],
+    "source": "ROGF construct — replace with your literature citation on organizational learning in inter-firm networks (e.g., Argote organizational learning theory)."
+  }
+}

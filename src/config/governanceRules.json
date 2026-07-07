@@ -1,0 +1,16 @@
+[
+  { "id": "G1", "title": "Regulatory Alignment", "description": "All actors must operate within the boundaries set by the Regulator and applicable law.", "category": "Compliance", "defaultOwner": "Regulator" },
+  { "id": "G2", "title": "Platform Access Rule", "description": "Defines conditions under which actors may access core platform orchestration services.", "category": "Onboarding", "defaultOwner": "Platform Operator" },
+  { "id": "G3", "title": "Marketplace Fairness Rule", "description": "Ensures non-discriminatory matching of supply and demand within the marketplace.", "category": "Compliance", "defaultOwner": "Marketplace" },
+  { "id": "G4", "title": "Governance Role Assignment", "description": "Every governance role must be assigned to an accountable actor at all times.", "category": "Onboarding", "defaultOwner": "Platform Operator" },
+  { "id": "G5", "title": "Customer Protection Rule", "description": "Protects customers from unfair contractual or service terms.", "category": "Compliance", "defaultOwner": "Marketplace" },
+  { "id": "G6", "title": "Dispute Escalation Rule", "description": "Defines the escalation path for unresolved inter-actor disputes.", "category": "Risk", "defaultOwner": "Auditor" },
+  { "id": "G7", "title": "Independent Audit Rule", "description": "Requires periodic independent governance and compliance audits.", "category": "Risk", "defaultOwner": "Auditor" },
+  { "id": "G8", "title": "Data Sovereignty Rule", "description": "Mandates data residency, access control and sovereignty-compliant handling.", "category": "Data", "defaultOwner": "Data Platform" },
+  { "id": "G9", "title": "Quality Certification Rule", "description": "Requires manufacturing quality certification before capacity is listed.", "category": "Compliance", "defaultOwner": "Certification Body" },
+  { "id": "G10", "title": "Interoperability Standard Rule", "description": "Requires adherence to shared technical and data interoperability standards.", "category": "Data", "defaultOwner": "Standards Body" },
+  { "id": "G11", "title": "Circularity & Sustainability Rule", "description": "Requires end-of-life material recovery and circular closure reporting.", "category": "Lifecycle", "defaultOwner": "Recycler" },
+  { "id": "G12", "title": "Workforce Qualification Rule", "description": "Requires minimum workforce skills and training certification.", "category": "Onboarding", "defaultOwner": "Workforce Provider" },
+  { "id": "G13", "title": "Cyber-Resilience Rule", "description": "Requires baseline cybersecurity controls across platform-critical actors.", "category": "Resilience", "defaultOwner": "Security Provider" },
+  { "id": "G14", "title": "Capacity Redundancy Rule", "description": "Requires qualification of alternate capacity providers to avoid single points of failure.", "category": "Dependency", "defaultOwner": "Platform Operator" }
+]

@@ -1,0 +1,1083 @@
+[
+  {
+    "ecosystem": {
+      "id": "eco-catena-x",
+      "name": "Catena-X",
+      "industry": "Automotive Manufacturing",
+      "country": "Germany",
+      "platform": "Catena-X Data Space",
+      "description": "A federated, sovereign automotive data ecosystem connecting OEMs, suppliers and service providers across the value chain under shared governance and interoperability standards.",
+      "currentPhase": "Evolution",
+      "platformType": "Federated",
+      "platformOpenness": 78,
+      "numOrganizations": 18,
+      "dateCreated": "2023-02-01"
+    },
+    "actors": [
+      {
+        "id": "cx-regulator",
+        "ecosystemId": "eco-catena-x",
+        "name": "European Data Regulator",
+        "type": "Regulator",
+        "role": "Regulatory Oversight Authority",
+        "authorityLevel": 90,
+        "trustLevel": 82,
+        "criticality": "High",
+        "platformMember": false,
+        "country": "Belgium",
+        "capabilities": [
+          "Legal Enforcement",
+          "Data Act Oversight"
+        ],
+        "resources": [
+          "Legal Mandate"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-standards",
+        "ecosystemId": "eco-catena-x",
+        "name": "Catena-X Association",
+        "type": "Standards Body",
+        "role": "Interoperability Standard-Setter",
+        "authorityLevel": 84,
+        "trustLevel": 88,
+        "criticality": "High",
+        "platformMember": true,
+        "country": "Germany",
+        "capabilities": [
+          "Standard Setting",
+          "Certification"
+        ],
+        "resources": [
+          "Technical Committee"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-operator",
+        "ecosystemId": "eco-catena-x",
+        "name": "Catena-X Operating Company",
+        "type": "Platform Operator",
+        "role": "Ecosystem Orchestrator",
+        "authorityLevel": 96,
+        "trustLevel": 80,
+        "criticality": "Critical",
+        "platformMember": true,
+        "country": "Germany",
+        "capabilities": [
+          "Orchestration",
+          "Onboarding",
+          "Identity Management"
+        ],
+        "resources": [
+          "Core Platform"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-dataplatform",
+        "ecosystemId": "eco-catena-x",
+        "name": "Catena-X Data Space",
+        "type": "Data Platform",
+        "role": "Data Custodian",
+        "authorityLevel": 88,
+        "trustLevel": 79,
+        "criticality": "Critical",
+        "platformMember": true,
+        "country": "Germany",
+        "capabilities": [
+          "Data Sovereignty",
+          "Access Control"
+        ],
+        "resources": [
+          "Data Infrastructure"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-marketplace",
+        "ecosystemId": "eco-catena-x",
+        "name": "Catena-X App Marketplace",
+        "type": "Marketplace",
+        "role": "Transaction Broker",
+        "authorityLevel": 70,
+        "trustLevel": 75,
+        "criticality": "Medium",
+        "platformMember": true,
+        "country": "Germany",
+        "capabilities": [
+          "Service Discovery"
+        ],
+        "resources": [
+          "Marketplace Platform"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-oem1",
+        "ecosystemId": "eco-catena-x",
+        "name": "OEM Alpha Motors",
+        "type": "OEM",
+        "role": "Equipment & IP Provider",
+        "authorityLevel": 82,
+        "trustLevel": 78,
+        "criticality": "High",
+        "platformMember": true,
+        "country": "Germany",
+        "capabilities": [
+          "Vehicle Design",
+          "Supply Chain Orchestration"
+        ],
+        "resources": [
+          "Manufacturing IP"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-oem2",
+        "ecosystemId": "eco-catena-x",
+        "name": "OEM Beta Automotive",
+        "type": "OEM",
+        "role": "Equipment & IP Provider",
+        "authorityLevel": 76,
+        "trustLevel": 74,
+        "criticality": "High",
+        "platformMember": true,
+        "country": "France",
+        "capabilities": [
+          "Vehicle Design"
+        ],
+        "resources": [
+          "Manufacturing IP"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-tier1",
+        "ecosystemId": "eco-catena-x",
+        "name": "Tier-1 Components Group",
+        "type": "Manufacturing Provider",
+        "role": "Capacity Provider",
+        "authorityLevel": 68,
+        "trustLevel": 72,
+        "criticality": "High",
+        "platformMember": true,
+        "country": "Germany",
+        "capabilities": [
+          "Component Manufacturing"
+        ],
+        "resources": [
+          "Production Lines"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-tier2",
+        "ecosystemId": "eco-catena-x",
+        "name": "Tier-2 Precision Parts",
+        "type": "Manufacturing Provider",
+        "role": "Capacity Provider",
+        "authorityLevel": 55,
+        "trustLevel": 70,
+        "criticality": "Medium",
+        "platformMember": true,
+        "country": "Poland",
+        "capabilities": [
+          "Precision Machining"
+        ],
+        "resources": [
+          "Production Lines"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-logistics",
+        "ecosystemId": "eco-catena-x",
+        "name": "Cross-Border Logistics Co",
+        "type": "Logistics",
+        "role": "Fulfillment Coordinator",
+        "authorityLevel": 60,
+        "trustLevel": 71,
+        "criticality": "Medium",
+        "platformMember": true,
+        "country": "Netherlands",
+        "capabilities": [
+          "Freight",
+          "Customs"
+        ],
+        "resources": [
+          "Fleet"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-mro",
+        "ecosystemId": "eco-catena-x",
+        "name": "Fleet MRO Services",
+        "type": "MRO",
+        "role": "Maintenance & Repair Actor",
+        "authorityLevel": 48,
+        "trustLevel": 69,
+        "criticality": "Low",
+        "platformMember": true,
+        "country": "Germany",
+        "capabilities": [
+          "Maintenance"
+        ],
+        "resources": [
+          "Service Centers"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-recycler",
+        "ecosystemId": "eco-catena-x",
+        "name": "Circular Materials Recovery",
+        "type": "Recycler",
+        "role": "Circularity Steward",
+        "authorityLevel": 44,
+        "trustLevel": 73,
+        "criticality": "Low",
+        "platformMember": true,
+        "country": "Germany",
+        "capabilities": [
+          "Material Recovery",
+          "Battery Recycling"
+        ],
+        "resources": [
+          "Recovery Plants"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-financial",
+        "ecosystemId": "eco-catena-x",
+        "name": "Industrial Finance Partners",
+        "type": "Financial Provider",
+        "role": "Risk & Capital Underwriter",
+        "authorityLevel": 52,
+        "trustLevel": 76,
+        "criticality": "Medium",
+        "platformMember": false,
+        "country": "Luxembourg",
+        "capabilities": [
+          "Trade Finance"
+        ],
+        "resources": [
+          "Capital Pool"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-security",
+        "ecosystemId": "eco-catena-x",
+        "name": "CyberShield Industrial",
+        "type": "Security Provider",
+        "role": "Cyber-Resilience Guardian",
+        "authorityLevel": 66,
+        "trustLevel": 77,
+        "criticality": "High",
+        "platformMember": true,
+        "country": "Germany",
+        "capabilities": [
+          "Zero Trust",
+          "Threat Monitoring"
+        ],
+        "resources": [
+          "SOC"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-auditor",
+        "ecosystemId": "eco-catena-x",
+        "name": "Independent Governance Auditors LLP",
+        "type": "Auditor",
+        "role": "Independent Governance Auditor",
+        "authorityLevel": 58,
+        "trustLevel": 85,
+        "criticality": "Medium",
+        "platformMember": false,
+        "country": "Germany",
+        "capabilities": [
+          "Compliance Audit"
+        ],
+        "resources": [
+          "Audit Team"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-certifier",
+        "ecosystemId": "eco-catena-x",
+        "name": "Quality Certification Institute",
+        "type": "Certification Body",
+        "role": "Quality Certification Authority",
+        "authorityLevel": 50,
+        "trustLevel": 81,
+        "criticality": "Medium",
+        "platformMember": false,
+        "country": "Germany",
+        "capabilities": [
+          "ISO Certification"
+        ],
+        "resources": [
+          "Certification Labs"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-customer",
+        "ecosystemId": "eco-catena-x",
+        "name": "Fleet Operator Consortium",
+        "type": "Customer",
+        "role": "Demand Originator",
+        "authorityLevel": 62,
+        "trustLevel": 74,
+        "criticality": "Medium",
+        "platformMember": true,
+        "country": "Germany",
+        "capabilities": [
+          "Fleet Demand Planning"
+        ],
+        "resources": [
+          "Fleet Contracts"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "cx-workforce",
+        "ecosystemId": "eco-catena-x",
+        "name": "Automotive Skills Alliance",
+        "type": "Workforce Provider",
+        "role": "Skills & Training Actor",
+        "authorityLevel": 40,
+        "trustLevel": 72,
+        "criticality": "Low",
+        "platformMember": false,
+        "country": "Germany",
+        "capabilities": [
+          "Technical Training"
+        ],
+        "resources": [
+          "Training Centers"
+        ],
+        "status": "Onboarding"
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "cx-e1",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-regulator",
+        "toActorId": "cx-operator",
+        "dependencyType": "Contractual",
+        "strength": 70,
+        "ruleId": "D3",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e2",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-standards",
+        "toActorId": "cx-dataplatform",
+        "dependencyType": "Data",
+        "strength": 72,
+        "ruleId": "D10",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e3",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-operator",
+        "toActorId": "cx-marketplace",
+        "dependencyType": "Technology",
+        "strength": 88,
+        "ruleId": "D12",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e4",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-operator",
+        "toActorId": "cx-dataplatform",
+        "dependencyType": "Data",
+        "strength": 92,
+        "ruleId": "D8",
+        "criticality": "Critical",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e5",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-oem1",
+        "toActorId": "cx-tier1",
+        "dependencyType": "Material",
+        "strength": 80,
+        "ruleId": "D1",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e6",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-oem2",
+        "toActorId": "cx-tier1",
+        "dependencyType": "Material",
+        "strength": 62,
+        "ruleId": "D1",
+        "criticality": "Medium",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e7",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-oem1",
+        "toActorId": "cx-tier2",
+        "dependencyType": "Material",
+        "strength": 54,
+        "ruleId": "D1",
+        "criticality": "Medium",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e8",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-tier1",
+        "toActorId": "cx-logistics",
+        "dependencyType": "Service",
+        "strength": 66,
+        "ruleId": "D5",
+        "criticality": "Medium",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e9",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-tier2",
+        "toActorId": "cx-logistics",
+        "dependencyType": "Service",
+        "strength": 50,
+        "ruleId": "D5",
+        "criticality": "Low",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e10",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-logistics",
+        "toActorId": "cx-customer",
+        "dependencyType": "Service",
+        "strength": 58,
+        "ruleId": "D5",
+        "criticality": "Medium",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e11",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-oem1",
+        "toActorId": "cx-mro",
+        "dependencyType": "Service",
+        "strength": 45,
+        "ruleId": null,
+        "criticality": "Low",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e12",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-recycler",
+        "toActorId": "cx-tier1",
+        "dependencyType": "Material",
+        "strength": 38,
+        "ruleId": "D11",
+        "criticality": "Low",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e13",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-dataplatform",
+        "toActorId": "cx-security",
+        "dependencyType": "Data",
+        "strength": 76,
+        "ruleId": "D9",
+        "criticality": "High",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e14",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-security",
+        "toActorId": "cx-operator",
+        "dependencyType": "Technology",
+        "strength": 80,
+        "ruleId": "D9",
+        "criticality": "Critical",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e15",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-auditor",
+        "toActorId": "cx-operator",
+        "dependencyType": "Contractual",
+        "strength": 48,
+        "ruleId": "D3",
+        "criticality": "Medium",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e16",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-certifier",
+        "toActorId": "cx-tier1",
+        "dependencyType": "Contractual",
+        "strength": 42,
+        "ruleId": "D13",
+        "criticality": "Medium",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e17",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-financial",
+        "toActorId": "cx-oem1",
+        "dependencyType": "Financial",
+        "strength": 40,
+        "ruleId": null,
+        "criticality": "Low",
+        "status": "Active"
+      },
+      {
+        "id": "cx-e18",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-workforce",
+        "toActorId": "cx-tier2",
+        "dependencyType": "Service",
+        "strength": 30,
+        "ruleId": "D14",
+        "criticality": "Low",
+        "status": "At Risk"
+      },
+      {
+        "id": "cx-e19",
+        "ecosystemId": "eco-catena-x",
+        "fromActorId": "cx-oem2",
+        "toActorId": "cx-marketplace",
+        "dependencyType": "Technology",
+        "strength": 58,
+        "ruleId": "D10",
+        "criticality": "Medium",
+        "status": "Active"
+      }
+    ],
+    "governanceRules": [
+      {
+        "id": "G1",
+        "ecosystemId": "eco-catena-x",
+        "title": "Regulatory Alignment",
+        "description": "All actors must operate within the boundaries set by the Regulator and applicable law.",
+        "category": "Compliance",
+        "active": true,
+        "owner": "Regulator",
+        "compliance": 88,
+        "impact": "High"
+      },
+      {
+        "id": "G2",
+        "ecosystemId": "eco-catena-x",
+        "title": "Platform Access Rule",
+        "description": "Defines conditions under which actors may access core platform orchestration services.",
+        "category": "Onboarding",
+        "active": true,
+        "owner": "Platform Operator",
+        "compliance": 84,
+        "impact": "Medium"
+      },
+      {
+        "id": "G3",
+        "ecosystemId": "eco-catena-x",
+        "title": "Marketplace Fairness Rule",
+        "description": "Ensures non-discriminatory matching of supply and demand within the marketplace.",
+        "category": "Compliance",
+        "active": true,
+        "owner": "Marketplace",
+        "compliance": 79,
+        "impact": "Medium"
+      },
+      {
+        "id": "G4",
+        "ecosystemId": "eco-catena-x",
+        "title": "Governance Role Assignment",
+        "description": "Every governance role must be assigned to an accountable actor at all times.",
+        "category": "Onboarding",
+        "active": true,
+        "owner": "Platform Operator",
+        "compliance": 74,
+        "impact": "High"
+      },
+      {
+        "id": "G5",
+        "ecosystemId": "eco-catena-x",
+        "title": "Customer Protection Rule",
+        "description": "Protects customers from unfair contractual or service terms.",
+        "category": "Compliance",
+        "active": true,
+        "owner": "Marketplace",
+        "compliance": 81,
+        "impact": "Medium"
+      },
+      {
+        "id": "G6",
+        "ecosystemId": "eco-catena-x",
+        "title": "Dispute Escalation Rule",
+        "description": "Defines the escalation path for unresolved inter-actor disputes.",
+        "category": "Risk",
+        "active": true,
+        "owner": "Auditor",
+        "compliance": 70,
+        "impact": "Medium"
+      },
+      {
+        "id": "G7",
+        "ecosystemId": "eco-catena-x",
+        "title": "Independent Audit Rule",
+        "description": "Requires periodic independent governance and compliance audits.",
+        "category": "Risk",
+        "active": true,
+        "owner": "Auditor",
+        "compliance": 76,
+        "impact": "Medium"
+      },
+      {
+        "id": "G8",
+        "ecosystemId": "eco-catena-x",
+        "title": "Data Sovereignty Rule",
+        "description": "Mandates data residency, access control and sovereignty-compliant handling.",
+        "category": "Data",
+        "active": true,
+        "owner": "Data Platform",
+        "compliance": 90,
+        "impact": "Critical"
+      },
+      {
+        "id": "G9",
+        "ecosystemId": "eco-catena-x",
+        "title": "Quality Certification Rule",
+        "description": "Requires manufacturing quality certification before capacity is listed.",
+        "category": "Compliance",
+        "active": true,
+        "owner": "Certification Body",
+        "compliance": 82,
+        "impact": "Medium"
+      },
+      {
+        "id": "G10",
+        "ecosystemId": "eco-catena-x",
+        "title": "Interoperability Standard Rule",
+        "description": "Requires adherence to shared technical and data interoperability standards.",
+        "category": "Data",
+        "active": true,
+        "owner": "Standards Body",
+        "compliance": 87,
+        "impact": "High"
+      },
+      {
+        "id": "G11",
+        "ecosystemId": "eco-catena-x",
+        "title": "Circularity & Sustainability Rule",
+        "description": "Requires end-of-life material recovery and circular closure reporting.",
+        "category": "Lifecycle",
+        "active": true,
+        "owner": "Recycler",
+        "compliance": 64,
+        "impact": "Low"
+      },
+      {
+        "id": "G12",
+        "ecosystemId": "eco-catena-x",
+        "title": "Workforce Qualification Rule",
+        "description": "Requires minimum workforce skills and training certification.",
+        "category": "Onboarding",
+        "active": false,
+        "owner": "Workforce Provider",
+        "compliance": 35,
+        "impact": "Medium"
+      },
+      {
+        "id": "G13",
+        "ecosystemId": "eco-catena-x",
+        "title": "Cyber-Resilience Rule",
+        "description": "Requires baseline cybersecurity controls across platform-critical actors.",
+        "category": "Resilience",
+        "active": true,
+        "owner": "Security Provider",
+        "compliance": 85,
+        "impact": "Critical"
+      },
+      {
+        "id": "G14",
+        "ecosystemId": "eco-catena-x",
+        "title": "Capacity Redundancy Rule",
+        "description": "Requires qualification of alternate capacity providers to avoid single points of failure.",
+        "category": "Dependency",
+        "active": true,
+        "owner": "Platform Operator",
+        "compliance": 58,
+        "impact": "High"
+      }
+    ]
+  },
+  {
+    "ecosystem": {
+      "id": "eco-small-marketplace",
+      "name": "Small Manufacturing Marketplace",
+      "industry": "General Manufacturing",
+      "country": "Netherlands",
+      "platform": "MakerLink",
+      "description": "An early-stage regional MaaS marketplace connecting a small number of manufacturers with local customers, still building out governance structures and actor diversity.",
+      "currentPhase": "Emergence",
+      "platformType": "Centralized",
+      "platformOpenness": 42,
+      "numOrganizations": 6,
+      "dateCreated": "2025-01-15"
+    },
+    "actors": [
+      {
+        "id": "sm-operator",
+        "ecosystemId": "eco-small-marketplace",
+        "name": "MakerLink Platform Ltd.",
+        "type": "Platform Operator",
+        "role": "Ecosystem Orchestrator",
+        "authorityLevel": 80,
+        "trustLevel": 60,
+        "criticality": "Critical",
+        "platformMember": true,
+        "country": "Netherlands",
+        "capabilities": [
+          "Orchestration",
+          "Order Matching"
+        ],
+        "resources": [
+          "Core Platform"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "sm-manufacturer1",
+        "ecosystemId": "eco-small-marketplace",
+        "name": "Regional Fabrication BV",
+        "type": "Manufacturing Provider",
+        "role": "Capacity Provider",
+        "authorityLevel": 62,
+        "trustLevel": 55,
+        "criticality": "Critical",
+        "platformMember": true,
+        "country": "Netherlands",
+        "capabilities": [
+          "CNC Machining",
+          "3D Printing"
+        ],
+        "resources": [
+          "Single Facility"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "sm-customer1",
+        "ecosystemId": "eco-small-marketplace",
+        "name": "Local Industrial Buyers Group",
+        "type": "Customer",
+        "role": "Demand Originator",
+        "authorityLevel": 40,
+        "trustLevel": 58,
+        "criticality": "Medium",
+        "platformMember": true,
+        "country": "Netherlands",
+        "capabilities": [
+          "Demand Aggregation"
+        ],
+        "resources": [
+          "Buyer Contracts"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "sm-logistics",
+        "ecosystemId": "eco-small-marketplace",
+        "name": "QuickShip Regional",
+        "type": "Logistics",
+        "role": "Fulfillment Coordinator",
+        "authorityLevel": 35,
+        "trustLevel": 52,
+        "criticality": "Medium",
+        "platformMember": true,
+        "country": "Netherlands",
+        "capabilities": [
+          "Local Freight"
+        ],
+        "resources": [
+          "Small Fleet"
+        ],
+        "status": "Active"
+      },
+      {
+        "id": "sm-financial",
+        "ecosystemId": "eco-small-marketplace",
+        "name": "Micro Capital Partners",
+        "type": "Financial Provider",
+        "role": "Risk & Capital Underwriter",
+        "authorityLevel": 30,
+        "trustLevel": 48,
+        "criticality": "Low",
+        "platformMember": false,
+        "country": "Netherlands",
+        "capabilities": [
+          "Invoice Financing"
+        ],
+        "resources": [
+          "Small Capital Pool"
+        ],
+        "status": "Onboarding"
+      },
+      {
+        "id": "sm-regulator",
+        "ecosystemId": "eco-small-marketplace",
+        "name": "National Trade Authority",
+        "type": "Regulator",
+        "role": "Regulatory Oversight Authority",
+        "authorityLevel": 70,
+        "trustLevel": 65,
+        "criticality": "Medium",
+        "platformMember": false,
+        "country": "Netherlands",
+        "capabilities": [
+          "Trade Compliance"
+        ],
+        "resources": [
+          "Legal Mandate"
+        ],
+        "status": "Active"
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "sm-e1",
+        "ecosystemId": "eco-small-marketplace",
+        "fromActorId": "sm-operator",
+        "toActorId": "sm-manufacturer1",
+        "dependencyType": "Technology",
+        "strength": 92,
+        "ruleId": "D12",
+        "criticality": "Critical",
+        "status": "Active"
+      },
+      {
+        "id": "sm-e2",
+        "ecosystemId": "eco-small-marketplace",
+        "fromActorId": "sm-manufacturer1",
+        "toActorId": "sm-customer1",
+        "dependencyType": "Contractual",
+        "strength": 85,
+        "ruleId": "D4",
+        "criticality": "Critical",
+        "status": "Active"
+      },
+      {
+        "id": "sm-e3",
+        "ecosystemId": "eco-small-marketplace",
+        "fromActorId": "sm-manufacturer1",
+        "toActorId": "sm-logistics",
+        "dependencyType": "Service",
+        "strength": 70,
+        "ruleId": "D5",
+        "criticality": "High",
+        "status": "At Risk"
+      },
+      {
+        "id": "sm-e4",
+        "ecosystemId": "eco-small-marketplace",
+        "fromActorId": "sm-financial",
+        "toActorId": "sm-manufacturer1",
+        "dependencyType": "Financial",
+        "strength": 45,
+        "ruleId": null,
+        "criticality": "Medium",
+        "status": "At Risk"
+      },
+      {
+        "id": "sm-e5",
+        "ecosystemId": "eco-small-marketplace",
+        "fromActorId": "sm-regulator",
+        "toActorId": "sm-operator",
+        "dependencyType": "Contractual",
+        "strength": 50,
+        "ruleId": "D3",
+        "criticality": "Medium",
+        "status": "Active"
+      }
+    ],
+    "governanceRules": [
+      {
+        "id": "G1",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Regulatory Alignment",
+        "description": "All actors must operate within the boundaries set by the Regulator and applicable law.",
+        "category": "Compliance",
+        "active": true,
+        "owner": "Regulator",
+        "compliance": 62,
+        "impact": "Medium"
+      },
+      {
+        "id": "G2",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Platform Access Rule",
+        "description": "Defines conditions under which actors may access core platform orchestration services.",
+        "category": "Onboarding",
+        "active": true,
+        "owner": "Platform Operator",
+        "compliance": 55,
+        "impact": "High"
+      },
+      {
+        "id": "G3",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Marketplace Fairness Rule",
+        "description": "Ensures non-discriminatory matching of supply and demand within the marketplace.",
+        "category": "Compliance",
+        "active": false,
+        "owner": "Marketplace",
+        "compliance": 20,
+        "impact": "Medium"
+      },
+      {
+        "id": "G4",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Governance Role Assignment",
+        "description": "Every governance role must be assigned to an accountable actor at all times.",
+        "category": "Onboarding",
+        "active": false,
+        "owner": "Platform Operator",
+        "compliance": 15,
+        "impact": "High"
+      },
+      {
+        "id": "G5",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Customer Protection Rule",
+        "description": "Protects customers from unfair contractual or service terms.",
+        "category": "Compliance",
+        "active": true,
+        "owner": "Marketplace",
+        "compliance": 48,
+        "impact": "Medium"
+      },
+      {
+        "id": "G6",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Dispute Escalation Rule",
+        "description": "Defines the escalation path for unresolved inter-actor disputes.",
+        "category": "Risk",
+        "active": false,
+        "owner": "Auditor",
+        "compliance": 10,
+        "impact": "Medium"
+      },
+      {
+        "id": "G7",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Independent Audit Rule",
+        "description": "Requires periodic independent governance and compliance audits.",
+        "category": "Risk",
+        "active": false,
+        "owner": "Auditor",
+        "compliance": 12,
+        "impact": "Medium"
+      },
+      {
+        "id": "G8",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Data Sovereignty Rule",
+        "description": "Mandates data residency, access control and sovereignty-compliant handling.",
+        "category": "Data",
+        "active": true,
+        "owner": "Data Platform",
+        "compliance": 40,
+        "impact": "High"
+      },
+      {
+        "id": "G9",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Quality Certification Rule",
+        "description": "Requires manufacturing quality certification before capacity is listed.",
+        "category": "Compliance",
+        "active": false,
+        "owner": "Certification Body",
+        "compliance": 18,
+        "impact": "Medium"
+      },
+      {
+        "id": "G10",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Interoperability Standard Rule",
+        "description": "Requires adherence to shared technical and data interoperability standards.",
+        "category": "Data",
+        "active": false,
+        "owner": "Standards Body",
+        "compliance": 22,
+        "impact": "Medium"
+      },
+      {
+        "id": "G11",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Circularity & Sustainability Rule",
+        "description": "Requires end-of-life material recovery and circular closure reporting.",
+        "category": "Lifecycle",
+        "active": false,
+        "owner": "Recycler",
+        "compliance": 8,
+        "impact": "Low"
+      },
+      {
+        "id": "G12",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Workforce Qualification Rule",
+        "description": "Requires minimum workforce skills and training certification.",
+        "category": "Onboarding",
+        "active": false,
+        "owner": "Workforce Provider",
+        "compliance": 10,
+        "impact": "Low"
+      },
+      {
+        "id": "G13",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Cyber-Resilience Rule",
+        "description": "Requires baseline cybersecurity controls across platform-critical actors.",
+        "category": "Resilience",
+        "active": true,
+        "owner": "Security Provider",
+        "compliance": 38,
+        "impact": "Critical"
+      },
+      {
+        "id": "G14",
+        "ecosystemId": "eco-small-marketplace",
+        "title": "Capacity Redundancy Rule",
+        "description": "Requires qualification of alternate capacity providers to avoid single points of failure.",
+        "category": "Dependency",
+        "active": false,
+        "owner": "Platform Operator",
+        "compliance": 5,
+        "impact": "Critical"
+      }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+[
+  { "type": "Regulator", "category": "Governance", "defaultRole": "Regulatory Oversight Authority" },
+  { "type": "Standards Body", "category": "Governance", "defaultRole": "Interoperability Standard-Setter" },
+  { "type": "Industry Association", "category": "Governance", "defaultRole": "Collective Voice & Advocacy Body" },
+  { "type": "Platform Operator", "category": "Platform", "defaultRole": "Ecosystem Orchestrator" },
+  { "type": "Marketplace", "category": "Platform", "defaultRole": "Transaction Broker" },
+  { "type": "Data Platform", "category": "Platform", "defaultRole": "Data Custodian" },
+  { "type": "Technology Provider", "category": "Platform", "defaultRole": "Platform Capability Enabler" },
+  { "type": "OEM", "category": "Supply", "defaultRole": "Equipment & IP Provider" },
+  { "type": "Manufacturing Provider", "category": "Supply", "defaultRole": "Capacity Provider" },
+  { "type": "Customer", "category": "Customer", "defaultRole": "Demand Originator" },
+  { "type": "MRO", "category": "Support", "defaultRole": "Maintenance & Repair Actor" },
+  { "type": "Logistics", "category": "Support", "defaultRole": "Fulfillment Coordinator" },
+  { "type": "Recycler", "category": "Support", "defaultRole": "Circularity Steward" },
+  { "type": "Financial Provider", "category": "Support", "defaultRole": "Risk & Capital Underwriter" },
+  { "type": "Insurance Provider", "category": "Support", "defaultRole": "Liability Risk Pool Manager" },
+  { "type": "Workforce Provider", "category": "Support", "defaultRole": "Skills & Training Actor" },
+  { "type": "Auditor", "category": "Assurance", "defaultRole": "Independent Governance Auditor" },
+  { "type": "Security Provider", "category": "Assurance", "defaultRole": "Cyber-Resilience Guardian" },
+  { "type": "Certification Body", "category": "Assurance", "defaultRole": "Quality Certification Authority" }
+]
